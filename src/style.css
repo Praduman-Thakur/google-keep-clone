@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 200, 18);
+  right: 18px;
+  bottom: -18px;
+  color: #b45454;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+}
+.header {
+  padding: 10px 20px;
+  margin: autp -10px;
+  box-shadow: 0 0 2px 0 rgb(114, 114, 114);
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  font-size: 1.5rem;
+  color: #5f6368;
+}
+form {
+  border-radius: 7px;
+  width: 40%;
+  margin: 20px auto;
+  position: relative;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+}
+form input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  outline: none;
+}
+form textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer p {
+  color: #5f6368;
+}
+
+.note {
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  width: 300px;
+  padding: 15px;
+  margin: 20px;
+}
+.note h1 {
+  font-size: 1rem;
+  margin: 7px 0;
+}
+.note p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+.note button {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.container {
+  display: inline-block;
+}
