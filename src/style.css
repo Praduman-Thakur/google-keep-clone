@@ -90,3 +90,8 @@ form textarea {
 .container {
   display: inline-block;
 }
+.colorBox {
+  display: flex;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+  width: 25%;
+}

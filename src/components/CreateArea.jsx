@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../style.css";
 
 import Note from "./Note";
+import TextArea from "./TextArea";
 
 const CreateArea = () => {
   const [note, setNote] = useState([]);
@@ -51,6 +52,7 @@ const CreateArea = () => {
           placeholder="Take a Note.."
           onChange={addItem}
         ></textarea>
+
         <button onClick={addList}>Add</button>
       </form>
       {note.map((value, index) => {
