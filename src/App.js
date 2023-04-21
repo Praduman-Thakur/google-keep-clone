@@ -6,13 +6,10 @@ import Note from "./components/Note";
 import { useState } from "react";
 
 function App(props) {
-  const [list, setList] = useState([]);
   return (
     <div>
       <Header />
-      <CreateArea list={list} setList={setList} />
-      {/* <Note list={list} setList={setList} /> */}
-
+      <CreateArea />
       <Footer />
     </div>
   );

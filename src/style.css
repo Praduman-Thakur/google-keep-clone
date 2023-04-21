@@ -92,20 +92,29 @@ form textarea {
 }
 .colorBox {
   box-shadow: 0 1px 7px rgb(128, 128, 128);
-<<<<<<< HEAD
-  width: 25%;
-  background-color: white;
-  height: 100px;
-  z-index: 2221121;
-  position: absolute;
-=======
   display: flex;
-  height: 55px;
-  position: relative;
-  top: 12px;
-  padding-left: 10px;
+  justify-content: flex-end;
+  height: 70px;
+  position: absolute;
+  width: 350px;
+  background-color: white;
+  z-index: 20;
+  border-radius: 6px;
 }
 .colorBox button {
   top: inherit;
->>>>>>> 2b60320c69eac4c1a423635999c171614fdb4ec3
+}
+
+.expanded-note {
+  height: 400px;
+  width: 1000px;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 10000;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+  border-radius: 6px;
+  text-align: center;
 }
