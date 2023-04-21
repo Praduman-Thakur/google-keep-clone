@@ -91,11 +91,21 @@ form textarea {
   display: inline-block;
 }
 .colorBox {
-  display: flex;
   box-shadow: 0 1px 7px rgb(128, 128, 128);
+<<<<<<< HEAD
   width: 25%;
   background-color: white;
   height: 100px;
   z-index: 2221121;
   position: absolute;
+=======
+  display: flex;
+  height: 55px;
+  position: relative;
+  top: 12px;
+  padding-left: 10px;
+}
+.colorBox button {
+  top: inherit;
+>>>>>>> 2b60320c69eac4c1a423635999c171614fdb4ec3
 }
