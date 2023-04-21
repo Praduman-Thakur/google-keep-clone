@@ -1,18 +1,24 @@
 import React from "react";
+const BACKGROUND_COLOR = ["green", "red", "blue", "orange", "purple"];
 
-const ColorPalette = () => {
-  const backGroundColor = ["orange", "red", "green", "yellow", "purple"];
-  const changeColor = () => {};
-
-  return (
-    <div className="colorBox">
-      <button>das</button>
-      <button>dsa</button>
-      <button>dsada</button>
-      <button>dasda</button>
-      <button>dasd</button>
-    </div>
-  );
+const ColorPalette = ({ isColorPaletteVisible, setIsColorPaletteVisible }) => {
+  const convertBackgroundColor = () => {
+    console.log("object");
+  };
+  if (isColorPaletteVisible === true)
+    return (
+      <div className="colorBox">
+        {BACKGROUND_COLOR.map((color, index) => {
+          return (
+            <button
+              style={{ backgroundColor: color }}
+              key={index}
+              onClick={convertBackgroundColor}
+            ></button>
+          );
+        })}
+      </div>
+    );
 };
 
 export default ColorPalette;

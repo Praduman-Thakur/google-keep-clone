@@ -91,7 +91,13 @@ form textarea {
   display: inline-block;
 }
 .colorBox {
-  display: flex;
   box-shadow: 0 1px 7px rgb(128, 128, 128);
-  width: 25%;
+  display: flex;
+  height: 55px;
+  position: relative;
+  top: 12px;
+  padding-left: 10px;
+}
+.colorBox button {
+  top: inherit;
 }

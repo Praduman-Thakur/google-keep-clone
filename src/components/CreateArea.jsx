@@ -10,6 +10,10 @@ const CreateArea = () => {
     title: "",
     description: "",
   });
+  const [isTextAreaVisible, setIsTextAreaVisible] = useState(false);
+  const showTextArea = () => {
+    setIsTextAreaVisible(true);
+  };
   const addItem = (event) => {
     const { name, value } = event.target;
     setData((prevData) => {
@@ -27,6 +31,7 @@ const CreateArea = () => {
       title: "",
       description: "",
     });
+    setIsTextAreaVisible(false);
   };
   const deleteItem = (id) => {
     setNote((oldData) => {
@@ -45,13 +50,19 @@ const CreateArea = () => {
           onChange={addItem}
           placeholder="Title"
           value={data.title}
+          onClick={showTextArea}
         />
-        <textarea
+        <TextArea
+          isTextAreaVisible={isTextAreaVisible}
+          setIsTextAreaVisible={setIsTextAreaVisible}
+          data={data}
+        />
+        {/* <textarea
           name="description"
           value={data.description}
           placeholder="Take a Note.."
           onChange={addItem}
-        ></textarea>
+        ></textarea> */}
 
         <button onClick={addList}>Add</button>
       </form>
