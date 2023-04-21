@@ -94,4 +94,8 @@ form textarea {
   display: flex;
   box-shadow: 0 1px 7px rgb(128, 128, 128);
   width: 25%;
+  background-color: white;
+  height: 100px;
+  z-index: 2221121;
+  position: absolute;
 }

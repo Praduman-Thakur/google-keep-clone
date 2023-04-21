@@ -57,13 +57,11 @@ const CreateArea = () => {
       </form>
       {note.map((value, index) => {
         return (
-          <div className="container">
+          <div key={index} className="container">
             <div>
               <Note
                 title={value.title}
                 description={value.description}
-                key={index}
-                id={index}
                 onSelect={deleteItem}
               />
             </div>
